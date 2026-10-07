@@ -1,12 +1,37 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#ffffff"/><title>Comprehension Labs — Human knowledge for AI</title><meta name="description" content="Data and evaluations across learning, speech and TTS, reasoning and judgment, and expert work with computer use."/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet"/></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script><noscript><style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://comprehensionlabs.co/">
+  <meta property="og:url" content="https://comprehensionlabs.co/">
+  <title>Comprehension Labs — Human knowledge for AI</title>
+  <meta name="description" content="Data and evaluations across learning, speech and TTS, reasoning and judgment, and expert work with computer use.">
+  <meta property="og:title" content="Comprehension Labs — Human knowledge for AI">
+  <meta property="og:description" content="Data and evaluations across learning, speech and TTS, reasoning and judgment, and expert work with computer use.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let saved;
+      try { saved = localStorage.getItem('comprehension-theme'); } catch (_) {}
+      const dark = saved === 'dark' || (saved !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#171717' : '#ffffff';
+    })();
+  </script>
+  <style>
     :root { color-scheme: light; --paper: #fff; --ink: #171717; --muted: #595959; --line: #dedede; }
     :root[data-theme="dark"] { color-scheme: dark; --paper: #171717; --ink: #eceae6; --muted: #b6b3ad; --line: #414141; }
     * { box-sizing: border-box; }
     html { background: var(--paper); scrollbar-gutter: stable; }
-    .site-shell { max-width: 650px; margin: 0 auto; padding: 64px 20px 48px; color: var(--ink); font: 15px/1.55 Lato, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-    header { position: relative; margin-bottom: 34px; padding-right: 0; text-align: center; }
-    header nav { justify-content: center; }
+    body { max-width: 650px; margin: 64px auto 48px; padding: 0 20px; color: var(--ink); font: 15px/1.55 Lato, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    header { position: relative; margin-bottom: 34px; padding-right: 48px; }
     .theme-toggle { position: absolute; top: -10px; right: -8px; width: 44px; height: 44px; padding: 11px; border: 0; border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
     .theme-toggle:hover { background: var(--line); }
     .theme-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
@@ -15,10 +40,10 @@
     [data-theme="dark"] .theme-toggle .sun { display: block; }
     [data-theme="dark"] .theme-toggle .moon { display: none; }
     @media print { :root[data-theme] { --paper: #fff; --ink: #171717; --muted: #595959; --line: #dedede; color-scheme: light; } .theme-toggle { display: none; } }
-    .brand { width: max-content; max-width: 100%; margin: 0 auto 12px; font-family: "Source Serif 4", Georgia, serif; font-size: clamp(22px, 6.4vw, 32px); font-weight: 600; font-optical-sizing: auto; line-height: 1.2; letter-spacing: -.02em; }
+    .brand { margin: 0 0 12px; font-size: 18px; font-weight: 700; }
     nav { display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: 13px; color: var(--muted); }
     h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-optical-sizing: auto; }
-    h1 { margin: 0 0 20px; white-space: nowrap; font-size: clamp(12px, 4.1vw, 20px); line-height: 1.22; letter-spacing: -.02em; }
+    h1 { margin: 0 0 20px; white-space: nowrap; font-size: clamp(12px, 4.1vw, 28px); line-height: 1.22; letter-spacing: -.02em; }
     h2 { margin: 0 0 12px; font-size: 17px; line-height: 1.35; }
     p { margin: 0 0 15px; }
     section { margin-top: 32px; scroll-margin-top: 24px; }
@@ -33,28 +58,24 @@
     .status { color: var(--muted); font-size: 13px; }
     footer { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 18px; color: var(--muted); font-size: 13px; }
     footer p { margin: 0; }
-    @media (max-width: 480px) { .site-shell { padding-top: 30px; padding-inline: 20px; } header { margin-bottom: 28px; } }
-    @media print { .site-shell { margin: 0; max-width: none; } nav { display: none; } section { break-inside: avoid; } }
-  body{margin:0}.site-shell{opacity:1}#research{margin-top:0;padding:0;margin-bottom:32px;border:0}</style><div class="site-shell"><header>
+    @media (max-width: 480px) { body { margin-top: 30px; padding-inline: 20px; } header { margin-bottom: 28px; } }
+    @media print { body { margin: 0; max-width: none; } nav { display: none; } section { break-inside: avoid; } }
+  </style>
+</head>
+<body><header>
     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" hidden>
       <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
     </button>
     <p class="brand">Comprehension Labs</p>
     <nav aria-label="Main navigation">
-      <a href="#data">Data</a>
-      <a href="#approach">Approach</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
+      <a href="/data">Data</a>
+      <a href="/approach">Approach</a>
+      <a href="/research">Research</a>
+      <a href="/contact">Contact</a>
     </nav>
   </header>
   <main>
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">Research grounded in human performance</h2>
-      <p>Our evaluation design separates the capabilities a single score can hide: recognizing speech, preserving meaning, following an argument, making a judgment, and completing a task.</p>
-      <p>For speech, that means distinguishing transcription and comprehension from synthesis quality, pronunciation, and intelligibility. For judgment, it means measuring disagreement, confidence, and evidence quality against independent human review. For work, it means assessing the finished result alongside the process that produced it.</p>
-      <p>Permissions are specific to each use. Speech synthesis and voice cloning require explicit authorization; access to a recording alone does not establish those rights.</p>
-    </section>
     <h1>Human knowledge for more capable AI.</h1>
     <p>Comprehension Labs is a multimodal data lab founded at UC Berkeley, building rights-cleared, verified human data for frontier AI, grounded in education.</p>
     <p>Comprehension Labs builds data and evaluations around how people learn, speak, reason, and work. We connect human performance with the context, feedback, and judgment needed to train and assess AI systems.</p>
@@ -88,7 +109,12 @@
       <p>Define the capability, data requirements, and acceptance test. We design the collection and evaluation around them.</p>
     </section>
 
-
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research grounded in human performance</h2>
+      <p>Our evaluation design separates the capabilities a single score can hide: recognizing speech, preserving meaning, following an argument, making a judgment, and completing a task.</p>
+      <p>For speech, that means distinguishing transcription and comprehension from synthesis quality, pronunciation, and intelligibility. For judgment, it means measuring disagreement, confidence, and evidence quality against independent human review. For work, it means assessing the finished result alongside the process that produced it.</p>
+      <p>Permissions are specific to each use. Speech synthesis and voice cloning require explicit authorization; access to a recording alone does not establish those rights.</p>
+    </section>
 
     <section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Build with us</h2>
@@ -112,4 +138,64 @@
 
 
 
-  </div></noscript></body></html>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const button = document.querySelector('.theme-toggle');
+      const media = matchMedia('(prefers-color-scheme: dark)');
+      let chosen = false;
+      try { chosen = ['light', 'dark'].includes(localStorage.getItem('comprehension-theme')); } catch (_) {}
+      function apply(theme) {
+        root.dataset.theme = theme;
+        const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#171717' : '#ffffff';
+      }
+      apply(root.dataset.theme);
+      button.hidden = false;
+      button.addEventListener('click', () => {
+        const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        chosen = true;
+        apply(theme);
+        try { localStorage.setItem('comprehension-theme', theme); } catch (_) {}
+      });
+      media.addEventListener('change', event => { if (!chosen) apply(event.matches ? 'dark' : 'light'); });
+    })();
+  </script>
+  <script>
+    (() => {
+      const sections = new Set(['data', 'approach', 'research', 'contact']);
+      history.scrollRestoration = 'manual';
+      function showSection(focus = false) {
+        const name = location.pathname.replace(/^\/|\/$/g, '');
+        if (!sections.has(name)) {
+          if (location.pathname === '/' && !location.hash) window.scrollTo(0, 0);
+          return;
+        }
+        const section = document.getElementById(name);
+        section.scrollIntoView({ block: 'start' });
+        if (focus) {
+          section.setAttribute('tabindex', '-1');
+          section.focus({ preventScroll: true });
+        }
+      }
+      document.querySelector('nav').addEventListener('click', event => {
+        const link = event.target.closest('a');
+        if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const url = new URL(link.href);
+        if (url.origin !== location.origin || !sections.has(url.pathname.slice(1))) return;
+        event.preventDefault();
+        if (location.pathname !== url.pathname || location.hash) history.pushState(null, '', url.pathname);
+        showSection(true);
+      });
+      window.addEventListener('popstate', () => showSection());
+      // Navigate immediately, then correct for any layout change when fonts settle.
+      showSection();
+      document.fonts.ready.then(() => {
+        if (sections.has(location.pathname.replace(/^\/|\/$/g, ''))) showSection();
+      });
+    })();
+  </script>
+</body>
+</html>
