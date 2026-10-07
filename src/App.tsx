@@ -24,10 +24,18 @@ export default function App(){
    window.scrollTo({top:end+top-24,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
    if(focus){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
   };
-  function linkClick(e:MouseEvent){const a=(e.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');if(!a||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const id=a.hash.slice(1);if(!document.getElementById(id))return;e.preventDefault();history.pushState(null,'','#'+id);jump(id,true);}
+  const sections=['data','approach','research','contact'];
+  function linkClick(e:MouseEvent){
+   const a=(e.target as Element).closest<HTMLAnchorElement>('a[href]');
+   if(!a||a.origin!==location.origin||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+   const path=a.pathname.replace(/^\/+|\/+$/g,'');
+   const id=a.hash.slice(1)||(sections.includes(path)?path:'');
+   if(!id||!document.getElementById(id))return;
+   e.preventDefault();history.pushState(null,'',a.hash?'#'+id:a.pathname);jump(id,true);
+  }
   function hash(){
    const path=location.pathname.replace(/^\/+|\/+$/g,'');
-   const id=location.hash.slice(1)||(['data','approach','research','contact'].includes(path)?path:'');
+   const id=location.hash.slice(1)||(sections.includes(path)?path:'');
    if(id)jump(id);
   }
   container.addEventListener('click',linkClick);window.addEventListener('hashchange',hash);window.addEventListener('popstate',hash);

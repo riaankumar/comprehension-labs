@@ -25,4 +25,4 @@ Run the development server before the browser suite. Set `SITE_URL` to check a d
 
 ## Deployment
 
-Vercel builds with `npm ci` and `npm run build`, then serves `dist/`. Existing `/data`, `/approach`, `/research` and `/contact` links resolve to their sections in the same page. In-page navigation also supports fragments.
+Vercel builds with `npm ci` and `npm run build`, then serves `dist/`. Existing `/data`, `/approach`, `/research` and `/contact` links resolve to their sections in the same page. Navigation keeps these clean section URLs while scrolling within the page. Older fragment links remain supported.
