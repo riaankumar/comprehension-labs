@@ -24,11 +24,6 @@
     },
     {
       "style": "NORMAL_TEXT",
-      "text": "Our data network includes 100K+ learners and over 300 verified expert transcribers.",
-      "links": []
-    },
-    {
-      "style": "NORMAL_TEXT",
       "text": "Our team brings research and engineering experience from BAIR, Berkeley EECS, Amazon Alexa, Meta, AppLovin, and Alation, alongside years spent building in education.",
       "links": []
     },
@@ -44,7 +39,7 @@
     },
     {
       "style": "NORMAL_TEXT",
-      "text": "Debate became our first branch because it makes reasoning visible. A speaker advances a claim, an opponent challenges it, evidence is tested, and a judge must decide which ideas survive. Our debate data gives us a starting point for studying discernment: whether models can recognize stronger arguments, learn from disagreement, and update instead of reinforcing their own conclusions. Agreement alone is not understanding; several models can confidently share the same mistake.",
+      "text": "Debate became our first branch because it makes reasoning visible. A speaker advances a claim, an opponent challenges it, evidence is tested, and a judge must decide which ideas survive. Our data network includes 100K+ learners and over 300 verified expert transcribers. This is just the start of our work on discernment: whether models can recognize stronger arguments, learn from disagreement, and update instead of reinforcing their own conclusions. Agreement alone is not understanding; several models can confidently share the same mistake.",
       "links": []
     },
     {
@@ -97,6 +92,11 @@
       "date": "2026-10-07T15:47:47-07:00",
       "source": "Direct user correction in Comprehension Website",
       "change": "Add current 100K+ learner and over 300 verified expert transcriber scale below the introduction; replace the older debate-only contributor count."
+    },
+    {
+      "date": "2026-10-07T15:59:28-07:00",
+      "source": "Direct user placement correction in Comprehension Website",
+      "change": "Remove the scale line from the introduction. Place the learner and transcriber counts inside the debate paragraph where contributors were previously discussed, framing them as just the start."
     }
   ]
 }
