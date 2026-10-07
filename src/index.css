@@ -8,8 +8,10 @@ body{margin:0;max-width:none;padding:0;overflow-x:hidden;background:var(--paper)
 .scene-stage{background:var(--paper)}
 .scene-canvas{display:block;touch-action:pan-y;pointer-events:auto}
 .scene-links{position:absolute;top:24px;right:32px;z-index:2;display:flex;align-items:center;gap:12px;margin:0;color:var(--ink);pointer-events:auto}
-.scene-links a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:var(--paper);text-decoration:none}
-.scene-links a:hover{background:var(--line);border-color:var(--muted)}
+.scene-links a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;text-decoration:none}
+.scene-links .scene-social:hover{opacity:.65}
+.scene-links .scene-contact{padding:0 20px;border:1px solid var(--muted);border-radius:999px;background:var(--paper);font:400 16px/1.55 Lato,Arial,sans-serif}
+.scene-links .scene-contact:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .scene-links svg{display:block;width:18px;height:18px}
 .scene-identity{position:absolute;left:24px;right:24px;bottom:clamp(30px,6vh,64px);text-align:center;pointer-events:none;color:var(--ink)}
 .scene-tagline{margin:0;font:400 16px/1.5 Lato,Arial,sans-serif;color:var(--muted)}

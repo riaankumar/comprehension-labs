@@ -66,12 +66,10 @@ export default function App(){
    <div className="sticky top-0 h-screen w-full overflow-hidden scene-stage">
     <canvas ref={canvas} className="absolute inset-0 h-full w-full scene-canvas" aria-hidden="true"/>
     <nav ref={introLinks} className="scene-links" aria-label="Social and contact">
-     <a href="https://x.com/ComprehensionAI" target="_blank" rel="noopener noreferrer" aria-label="Comprehension Labs on X" title="Comprehension Labs on X">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9"/><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg>
+     <a className="scene-social" href="https://x.com/ComprehensionAI" target="_blank" rel="noopener noreferrer" aria-label="Comprehension Labs on X" title="Comprehension Labs on X">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z"/></svg>
      </a>
-     <a href="mailto:founders@comprehensionlabs.com" aria-label="Contact Comprehension Labs" title="Contact Comprehension Labs">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-     </a>
+     <a className="scene-contact" href="mailto:founders@comprehensionlabs.com" aria-label="Contact Comprehension Labs" title="Contact Comprehension Labs">Contact</a>
     </nav>
     <div ref={identity} className="scene-identity">
      <p className="scene-tagline">Human knowledge for more capable AI.</p>
