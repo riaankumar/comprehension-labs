@@ -3,7 +3,7 @@
     :root[data-theme="dark"] { color-scheme: dark; --paper: #171717; --ink: #eceae6; --muted: #b6b3ad; --line: #414141; }
     * { box-sizing: border-box; }
     html { background: var(--paper); scrollbar-gutter: stable; }
-    .site-shell { max-width: 960px; margin: 0 auto; padding: 64px 20px 48px; color: var(--ink); font: 15px/1.55 Lato, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    .site-shell { max-width: 650px; margin: 0 auto; padding: 64px 20px 48px; color: var(--ink); font: 15px/1.55 Lato, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
     header { position: relative; margin-bottom: 34px; padding-right: 0; text-align: center; }
     header nav { justify-content: center; }
     .theme-toggle { position: absolute; top: -10px; right: -8px; width: 44px; height: 44px; padding: 11px; border: 0; border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
