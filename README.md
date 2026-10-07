@@ -4,6 +4,8 @@ Single-page website built with Vite, React 18, TypeScript and Tailwind CSS.
 
 The opening canvas renders a particle tree whose atoms follow reversible scroll-driven paths. One centered company name transitions into the page header. The website includes pointer interaction, a light/dark theme, a keyboard skip link, reduced-motion support and full content without JavaScript.
 
+The homepage story follows the approved October 7, 2026 [Website Tree Story](https://docs.google.com/document/d/1Aej2R1VhdNP40zuwJvtR-rKJ24JOBjY7Qd-X8ZmuLSU/edit?tab=t.jkn8t0wcko50) tab. The hero remains “Comprehension Labs” and “Human knowledge for more capable AI.” The approved paragraph and link fixture is in `test/fixtures/website-tree-story.json`; the browser suite verifies exact copy, regular-weight company description and contact destinations against it.
+
 ## Development
 
 ```sh

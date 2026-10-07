@@ -6,7 +6,7 @@ import type {ScrollFrame} from '@/useScrollProgress';
 export function createHeaderMerge(shell:HTMLElement,identity:HTMLElement){
  const brand=shell.querySelector<HTMLElement>('.brand')!;
  const main=shell.querySelector<HTMLElement>('main')!;
- const controls=Array.from(shell.querySelectorAll<HTMLElement>('header nav, .theme-toggle'));
+ const controls=Array.from(shell.querySelectorAll<HTMLElement>('header nav, .theme-toggle, .header-tagline'));
  let dirty=true,width=0,height=0;
  let metrics={x:0,y:0,w:0,h:0,scale:1,startX:0,startY:0};
  const observer=new ResizeObserver(()=>{dirty=true;});
@@ -43,8 +43,10 @@ export function createHeaderMerge(shell:HTMLElement,identity:HTMLElement){
    }
    main.style.opacity=String(reduced?1:reveal);main.inert=!reduced&&reveal<.5;
    for(const el of controls){
-    el.style.opacity=String(reduced?1:reveal);
-    el.inert=!reduced&&reveal<.5;
+    // Reveal the page subtitle after its intro copy has disappeared.
+    const opacity=reduced?1:el.matches('.header-tagline')?smooth((p-.25)/.22):reveal;
+    el.style.opacity=String(opacity);
+    el.inert=!reduced&&opacity<.5;
    }
   },
   destroy(){observer.disconnect();document.fonts.removeEventListener('loadingdone',fontsChanged);},

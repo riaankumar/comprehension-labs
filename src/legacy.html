@@ -3,7 +3,8 @@
       <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
     </button>
-    <p class="brand">Comprehension Labs</p>
+    <h1 class="brand">Comprehension Labs</h1>
+    <p class="header-tagline">Human knowledge for more capable AI.</p>
     <nav aria-label="Main navigation">
       <a href="/data">Data</a>
       <a href="/approach">Approach</a>
@@ -12,50 +13,28 @@
     </nav>
   </header>
   <main>
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">Research grounded in human performance</h2>
-      <p>Our evaluation design separates the capabilities a single score can hide: recognizing speech, preserving meaning, following an argument, making a judgment, and completing a task.</p>
-      <p>For speech, that means distinguishing transcription and comprehension from synthesis quality, pronunciation, and intelligibility. For judgment, it means measuring disagreement, confidence, and evidence quality against independent human review. For work, it means assessing the finished result alongside the process that produced it.</p>
-      <p>Permissions are specific to each use. Speech synthesis and voice cloning require explicit authorization; access to a recording alone does not establish those rights.</p>
+    <section id="story" class="narrative-section" aria-labelledby="story-title">
+      <h2 id="story-title">AI needs the full path to human capability.</h2>
+      <p class="company-description">Comprehension Labs is a multimodal data lab and licensing platform building datasets around how people learn, reason, speak, and work.</p>
+      <p>We capture the attempts, feedback, revisions, judgments, and outcomes behind final outputs across debate, speech and TTS, longitudinal learning, and expert work.</p>
+      <p>Our team brings research and engineering experience from BAIR, Berkeley EECS, Amazon Alexa, Meta, AppLovin, and Alation, alongside years spent building in education.</p>
+      <p>Comprehension Labs began at Berkeley, shaped by our work in education and by watching technology transform how people learn. Edtech captured more answers, scores, and activity than ever before, but often lost the most valuable part: the attempt, the mistake, the feedback, the revision, and the moment something finally clicked.</p>
     </section>
-    <h1>Human knowledge for more capable AI.</h1>
-    <p>Comprehension Labs is a multimodal data lab founded at UC Berkeley, building rights-cleared, verified human data for frontier AI, grounded in education.</p>
-    <p>Comprehension Labs builds data and evaluations around how people learn, speak, reason, and work. We connect human performance with the context, feedback, and judgment needed to train and assess AI systems.</p>
-    <p>Our scope spans four data families, from individual speech recordings to complete learning and professional workflows. Education, assessment, and expert practice provide the grounding: tasks with context, feedback, and outcomes that can be reviewed.</p>
-
-    <section id="data" aria-labelledby="data-title">
-      <h2 id="data-title">Data across human capabilities</h2>
-      <ul>
-        <li><strong>Reasoning and judgment.</strong> Debate, research, evidence use, rebuttals, and expert decisions. Structured records of how people support claims, weigh competing arguments, disagree, and revise their conclusions.</li>
-        <li><strong>Speech and language.</strong> Speech recognition, text-to-speech (TTS), pronunciation, and language understanding across languages, accents, and dialects. Task-specific data design, from aligned text and recordings for synthesis to conversational context and assessed learner speech.</li>
-        <li><strong>Learning and application.</strong> Task attempts, misconceptions, instructor feedback, revisions, and assessed outcomes. Records that connect what someone knows with how they apply it.</li>
-        <li><strong>Expert work and computer use.</strong> Professional tasks, tool interactions, intermediate artifacts, corrections, and completed deliverables. Workflows that connect a task specification to an outcome a qualified reviewer can assess.</li>
-      </ul>
+    <section id="approach" class="narrative-section" aria-label="Our approach">
+      <p>Many data companies organize the world by modality: audio, video, images, and text. We organize it by how human capability develops. A single artifact shows what someone produced; a trajectory connects the attempt, challenge, feedback, revision, judgment, and outcome. We are building data around those missing paths so models can learn not only from human outputs, but from how people become capable.</p>
     </section>
-
-    <section id="scale" aria-labelledby="scale-title">
-      <h2 id="scale-title">Depth within every collection. Breadth across capabilities.</h2>
-      <p><strong>The largest licensed debate dataset, with 100,000+ contributors.</strong> This scale anchors our work in reasoning and judgment within a broader portfolio spanning learning, speech and TTS, and expert work.</p>
-      <p>Our collection design spans languages and dialects, skill levels, task types, and repeated attempts over time. Text, audio, video, and tool interactions connect to the same underlying task where the application and permissions call for them.</p>
-      <p>A debate round, for example, can connect speeches, transcripts, opposing arguments, scores, and judges’ explanations. A professional project can connect the brief, tool use, revisions, reviewer feedback, and accepted deliverable. These linked records support distinct training and evaluation tasks while preserving their shared context.</p>
+    <section id="data" class="narrative-section" aria-label="Our datasets">
+      <p>Debate became our first branch because it makes reasoning visible. A speaker advances a claim, an opponent challenges it, evidence is tested, and a judge must decide which ideas survive. Our debate data spans more than 100,000 contributors, giving us a starting point for studying discernment: whether models can recognize stronger arguments, learn from disagreement, and update instead of reinforcing their own conclusions. Agreement alone is not understanding; several models can confidently share the same mistake.</p>
+      <p>We want rights-cleared speech and TTS datasets designed around the capability a model needs: aligned text and speech, pronunciation and prosody coverage, accents and dialects, conversational context, and clear human evaluation. Where useful, longitudinal learner speech can also preserve attempts, corrections, and improvement, supporting models that do more than generate a voice and can better understand the person behind it.</p>
+      <p>We think of Comprehension Labs as a tree. Education is the root system: it taught us that intelligence develops through experience. Human trajectories form the trunk: the path from task to attempt, challenge, feedback, revision, judgment, and outcome. From that trunk grow four connected branches: reasoning and judgment; speech and language, including TTS; learning and application; and expert work and computer use.</p>
     </section>
-
-    <section aria-labelledby="value-title">
-      <h2 id="value-title">Why this data matters</h2>
-      <p>A transcript cannot preserve a speaker’s delivery. A final answer cannot show which correction resolved a mistake. A completed project cannot reveal where a workflow broke down. Those missing connections matter when deciding what to train and whether a model is ready for use.</p>
-      <p>We design around those connections: aligned speech for TTS, attempts and feedback for learning, evidence and expert disagreement for judgment, and reviewed outcomes for agents doing real work. The value is data tied to a specific capability, with the context and evaluation needed to test progress.</p>
+    <section id="research" class="narrative-section" aria-label="Our research">
+      <p>We are building Comprehension Labs as a deliberately lean, research-led team. Our advantage should come from asking better questions, finding rare and valuable human signals, and testing whether they make models more capable, not from producing the greatest volume of generic labels.</p>
+      <p>The internet records much of what humanity has produced. Comprehension Labs is building the record of how we learned to produce it.</p>
     </section>
-
-    <section id="approach" aria-labelledby="approach-title">
-      <h2 id="approach-title">Built to your specification.</h2>
-      <p>Define the capability, data requirements, and acceptance test. We design the collection and evaluation around them.</p>
-    </section>
-
-
-
     <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Build with us</h2>
-      <p>Work with us on a dataset, an evaluation, or a workflow. Start with the capability you need and the standard it must meet.</p>
-      <p><a href="mailto:founders@comprehensionlabs.com">founders@comprehensionlabs.com</a></p>
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Need a custom dataset for debate and judgment, multilingual speech and TTS, longitudinal learning, or expert computer-use workflows?</p>
+      <p>Email <a href="mailto:contact@comprehensionlabs.co">contact@comprehensionlabs.co</a> or <a href="https://cal.com/riaan-kumar-laogqu">request time on Cal.com</a>.</p>
     </section>
   </main>

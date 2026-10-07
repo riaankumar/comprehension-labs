@@ -1,0 +1,90 @@
+{
+  "source": "https://docs.google.com/document/d/1Aej2R1VhdNP40zuwJvtR-rKJ24JOBjY7Qd-X8ZmuLSU/edit?tab=t.jkn8t0wcko50",
+  "tab": "Website Tree Story",
+  "approvedDirection": "2026-10-07",
+  "hero": {
+    "title": "Comprehension Labs",
+    "subtitle": "Human knowledge for more capable AI."
+  },
+  "paragraphs": [
+    {
+      "style": "HEADING_1",
+      "text": "AI needs the full path to human capability.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Comprehension Labs is a multimodal data lab and licensing platform building datasets around how people learn, reason, speak, and work.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "We capture the attempts, feedback, revisions, judgments, and outcomes behind final outputs across debate, speech and TTS, longitudinal learning, and expert work.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Our team brings research and engineering experience from BAIR, Berkeley EECS, Amazon Alexa, Meta, AppLovin, and Alation, alongside years spent building in education.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Comprehension Labs began at Berkeley, shaped by our work in education and by watching technology transform how people learn. Edtech captured more answers, scores, and activity than ever before, but often lost the most valuable part: the attempt, the mistake, the feedback, the revision, and the moment something finally clicked.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Many data companies organize the world by modality: audio, video, images, and text. We organize it by how human capability develops. A single artifact shows what someone produced; a trajectory connects the attempt, challenge, feedback, revision, judgment, and outcome. We are building data around those missing paths so models can learn not only from human outputs, but from how people become capable.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Debate became our first branch because it makes reasoning visible. A speaker advances a claim, an opponent challenges it, evidence is tested, and a judge must decide which ideas survive. Our debate data spans more than 100,000 contributors, giving us a starting point for studying discernment: whether models can recognize stronger arguments, learn from disagreement, and update instead of reinforcing their own conclusions. Agreement alone is not understanding; several models can confidently share the same mistake.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "We want rights-cleared speech and TTS datasets designed around the capability a model needs: aligned text and speech, pronunciation and prosody coverage, accents and dialects, conversational context, and clear human evaluation. Where useful, longitudinal learner speech can also preserve attempts, corrections, and improvement, supporting models that do more than generate a voice and can better understand the person behind it.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "We think of Comprehension Labs as a tree. Education is the root system: it taught us that intelligence develops through experience. Human trajectories form the trunk: the path from task to attempt, challenge, feedback, revision, judgment, and outcome. From that trunk grow four connected branches: reasoning and judgment; speech and language, including TTS; learning and application; and expert work and computer use.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "We are building Comprehension Labs as a deliberately lean, research-led team. Our advantage should come from asking better questions, finding rare and valuable human signals, and testing whether they make models more capable, not from producing the greatest volume of generic labels.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "The internet records much of what humanity has produced. Comprehension Labs is building the record of how we learned to produce it.",
+      "links": []
+    },
+    {
+      "style": "HEADING_2",
+      "text": "Get in touch",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Need a custom dataset for debate and judgment, multilingual speech and TTS, longitudinal learning, or expert computer-use workflows?",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Email contact@comprehensionlabs.co or request time on Cal.com.",
+      "links": [
+        {
+          "text": "contact@comprehensionlabs.co",
+          "url": "mailto:contact@comprehensionlabs.co"
+        },
+        {
+          "text": "request time on Cal.com",
+          "url": "https://cal.com/riaan-kumar-laogqu"
+        }
+      ]
+    }
+  ]
+}

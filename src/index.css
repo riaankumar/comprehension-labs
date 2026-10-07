@@ -21,8 +21,7 @@ body{margin:0;max-width:none;padding:0;overflow-x:hidden;background:var(--paper)
 .site-shell{position:relative;width:100%;opacity:1;pointer-events:auto}
 .site-shell .brand{width:max-content;max-width:100%;transform-origin:top left;will-change:transform;pointer-events:none}
 .site-shell main{display:block;opacity:0}
-.site-shell header nav,.site-shell .theme-toggle{opacity:0}
-.site-shell #research{margin-top:0;padding:0;margin-bottom:32px;border:0}
+.site-shell header nav,.site-shell .theme-toggle,.site-shell .header-tagline{opacity:0}
 .skip-animation{position:fixed;left:20px;top:16px;z-index:10;padding:10px 16px;background:var(--paper);transform:translateY(-180%)}
 .skip-animation:focus{transform:none}
 .reduced-motion .scroll-track{display:none}
