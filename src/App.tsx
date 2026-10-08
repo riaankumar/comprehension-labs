@@ -2,6 +2,7 @@ import {useCallback,useLayoutEffect,useRef} from 'react';
 import legacy from '@/legacy.html?raw';
 import {createScene} from '@/TreeScene';
 import {createHeaderMerge} from '@/HeaderMerge';
+import {createIntroAutoScroll} from '@/introAutoScroll';
 import {transition} from '@/layout';
 import {useScrollProgress,type ScrollFrame} from '@/useScrollProgress';
 export default function App(){
@@ -40,7 +41,8 @@ export default function App(){
   }
   container.addEventListener('click',linkClick);window.addEventListener('hashchange',hash);window.addEventListener('popstate',hash);
   document.fonts.ready.then(()=>{if(live.current){hash();}});
-  return()=>{live.current=false;scene.current?.destroy();scene.current=null;header.current?.destroy();header.current=null;theme.removeEventListener('click',toggleTheme);container.removeEventListener('click',linkClick);window.removeEventListener('hashchange',hash);window.removeEventListener('popstate',hash);};
+  const stopAutoScroll=createIntroAutoScroll();
+  return()=>{stopAutoScroll();live.current=false;scene.current?.destroy();scene.current=null;header.current?.destroy();header.current=null;theme.removeEventListener('click',toggleTheme);container.removeEventListener('click',linkClick);window.removeEventListener('hashchange',hash);window.removeEventListener('popstate',hash);};
  },[]);
  const render=useCallback((f:ScrollFrame)=>{
   const element=shell.current;if(!element)return;const reduced=f.reduced||!scene.current;
