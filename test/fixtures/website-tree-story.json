@@ -74,7 +74,7 @@
     },
     {
       "style": "NORMAL_TEXT",
-      "text": "If you are an education company, institute, or learning tool, reach out. We help you monetise your data.",
+      "text": "If you run an education company, institute, or learning tool, your data captures how people learn, reason, and improve. We help turn those learning journeys, feedback, and expert insights into datasets and reinforcement learning environments for training and evaluating AI. Reach out to explore how you can license and monetise your data.",
       "links": []
     },
     {
@@ -107,6 +107,11 @@
       "date": "2026-10-07T21:35:48-07:00",
       "source": "Direct user addition in Comprehension Website",
       "change": "Invite education companies, institutes, and learning tools to reach out about monetising their data in Get in touch, retaining the custom dataset CTA and contact links."
+    },
+    {
+      "date": "2026-10-07T21:52:14-07:00",
+      "source": "Direct user approval in Comprehension Website",
+      "change": "Replace the education-partner invitation with the approved detailed paragraph, including reinforcement learning environments, AI training and evaluation, licensing, and monetisation."
     }
   ]
 }
