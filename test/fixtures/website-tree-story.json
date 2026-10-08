@@ -74,6 +74,11 @@
     },
     {
       "style": "NORMAL_TEXT",
+      "text": "If you are an education company, institute, or learning tool, reach out. We help you monetise your data.",
+      "links": []
+    },
+    {
+      "style": "NORMAL_TEXT",
       "text": "Email contact@comprehensionlabs.co or request time on Cal.com.",
       "links": [
         {
@@ -97,6 +102,11 @@
       "date": "2026-10-07T15:59:28-07:00",
       "source": "Direct user placement correction in Comprehension Website",
       "change": "Remove the scale line from the introduction. Place the learner and transcriber counts inside the debate paragraph where contributors were previously discussed, framing them as just the start."
+    },
+    {
+      "date": "2026-10-07T21:35:48-07:00",
+      "source": "Direct user addition in Comprehension Website",
+      "change": "Invite education companies, institutes, and learning tools to reach out about monetising their data in Get in touch, retaining the custom dataset CTA and contact links."
     }
   ]
 }
