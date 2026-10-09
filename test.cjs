@@ -50,7 +50,7 @@ const executablePath=process.env.HOME+'/Library/Caches/ms-playwright/chromium_he
   assert.deepEqual(await nojs.locator('main h2, main p').allTextContents(),approved.paragraphs.map(p=>p.text),'No-JavaScript fallback has all approved copy');
   assert.equal(await nojs.locator('h1').textContent(),approved.hero.title);assert.equal(await nojs.locator('.header-tagline').textContent(),approved.hero.subtitle);
   assert.equal(await nojs.locator('#contact a').first().getAttribute('href'),'mailto:contact@comprehensionlabs.co');
-  assert.equal(await nojs.locator('#contact a').last().getAttribute('href'),'https://cal.com/riaan-kumar-laogqu');
+  assert.equal(await nojs.locator('#contact a').last().getAttribute('href'),'https://cal.com/comprehensionlabs/30min');
   assert(await nojs.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await nojs.close();
  }
  await browser.close();fs.writeFileSync('test-results.json',JSON.stringify({results,touchScroll:true,orientationResize:true,keyboardSkip:true,noJSFullContent:true},null,2));console.log('PASS',JSON.stringify(results));

@@ -87,7 +87,7 @@
         },
         {
           "text": "request time on Cal.com",
-          "url": "https://cal.com/riaan-kumar-laogqu"
+          "url": "https://cal.com/comprehensionlabs/30min"
         }
       ]
     }
@@ -112,6 +112,11 @@
       "date": "2026-10-07T21:52:14-07:00",
       "source": "Direct user approval in Comprehension Website",
       "change": "Replace the education-partner invitation with the approved detailed paragraph, including reinforcement learning environments, AI training and evaluation, licensing, and monetisation."
+    },
+    {
+      "date": "2026-10-08T18:38:24-07:00",
+      "source": "Direct user correction in Comprehension Website",
+      "change": "Set the website booking destination to https://cal.com/comprehensionlabs/30min, retaining the existing Cal.com link text."
     }
   ]
 }
